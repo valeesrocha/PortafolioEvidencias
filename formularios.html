@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="Usuario">Nombre de usuario:</label><br/>
+            <input type="text" placeholder="Usuario" maxlength="10" name="Usuario" id="Usuario"  />
+
+            <br/> <label for="Nombre">Nombre: </label><br/>
+            <input type="text"  maxlength="20" name="Nombre" id="Nombre" />
+
+            <br/><label for="Paterno">Apellido paterno: </label><br/>
+            <input type="text"  maxlength="20" name="Paterno" id="Paterno" />
+
+            <br/><label for="Paterno">Apellido materno: </label><br/>
+            <input type="text"  maxlength="20" name="Materno" id="Materno" />
+            <br/><label for="pass">Contraseña: </label><br/>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" required/>
+
+            <br/><label for="Comenta">Comentarios</label><br/>
+            <textarea name="Comenta" id="Comenta" cols="25" rows="10"></textarea><br/>
+
+            <br/><label for="">E-mail: </label><br/>
+            <input type="email" name="Correo" id="Correo"/><br/>
+
+            <br/><label for="Fecha" name="Fecha" id="Fecha">Fecha de nacimiento:</label><br/>
+            <input type="date" / name="Fecha" id="Fecha"><br/>
+
+            <br/><label for="Colores">Selecciona tu color favorito</label><br/>
+            <input type="color" name="Colores" id="Colores"/><br/>
+
+            <br/><label for="Mes">Mes de registro</label><br/>
+            <input type="month" name="Mes" id="Mes"/>
+
+            <br/><label for="Semana">Semana de registro</label><br/>
+            <input type="week" name="Semana" id="Semana"/>
+
+            <br/><label for="Fecha">Fecha y hora de registro</label><br/>
+            <input type="datetime-local" name="Fecha" id="Fecha" required/>
+
+            <br/><label for="Archivo">Adjuntar archivo</label><br/>
+            <input type="file" name="Archivo" id="Archivo"/>
+
+            <br/><label for="SitioWeb">Sitio Web</label><br/>
+            <input type="url" name="SitioWeb" id="SitioWeb"/>
+
+            <br/><label for="Cantidad">Cantidad a comprar</label><br/>
+            <input type="number" name="Cantidad" id="Cantidad"/>
+
+            <br/><label for="Rango">Califica el servicio</label><br/>
+            <input type="range" name="Rango" id="Rango" min="0" max="10" value="8" />
+
+            <h3>Indica tus formas de pago preferenciales</h3>
+           <!--checked es para que una casilla se quede seleccionada siempre al cargar la página-->
+            <input type="checkbox" name="TarjetaCred" id="TarjetaCred" value="TarjetaCred" checked/>
+            <label for="TarjetaCred">Tarjeta de crédito</label><br/>
+            <input type="checkbox" name="Efectivo" id="Efectivo" value="Efectivo"/>
+            <label for="Efectivo">Efectivo</label><br/>
+            <input type="checkbox" name="TarjetaDeb" id="TarjetaDeb" value="TarjetaDeb"/>
+            <label for="TarjetaDeb">Tarjeta de débito</label><br/>
+            <input type="checkbox" name="Transferencia" id="Transferencia" value="Transferencia"/>
+            <label for="Transferencia">Transferencia</label><br/>
+            <!--EL type radio solo permite elegir una opción, y todos los elemtnos en la lista deben llevar el mismo name e id-->
+            <h3>Indica tu género</h3>
+            <input type="radio" name="Genero" id="Genero"/>
+            <label for="Genero">Masculino</label><br/>
+
+            <input type="radio" name="Genero" id="Genero"/>
+            <label for="Genero">Femenino</label><br/>
+
+            <h3>Categoría de producto a buscar</h3>
+            <select name="" size="6" multiple>
+                <optgroup label="Alimentos">
+                <option>Lácteos</option>
+                <option>Refrigerados</option>
+                <option>Carnes</option>
+                <option>Carnes frías</option>
+                <option>Frutas y verduras</option>
+                </optgroup>
+                <optgroup label="Cuidado personal">
+                <option selected>Higiene personal</option>
+                <!--selected va dentro del grupo option y sirve para que un elemento en la lista esté seleccionado por default-->
+                <option>Belleza</option>
+                </optgroup>
+                <optgroup label="Hogar">
+                <option>Productos de limpieza</option>
+                <option>Jardinería</option>
+                </optgroup>
+            </select><br>
+
+            <br><input type="submit" value="Enviar datos"/>
+            <input type="reset" value="Borrar datos"/>
+        </fieldset>
+    </form>
+
+</body>
+</html>
