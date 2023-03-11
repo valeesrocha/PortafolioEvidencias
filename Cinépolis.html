@@ -148,16 +148,16 @@
         <h1 style="color: white"; font-size: 5px; id="Boletos">Compra tus boletos aquí</h1></center>
         <form action="">
             <label for="Usuario">Nombre de usuario:</label><br>
-                <input type="text" placeholder="Usuario" maxlength="10" name="Usuario" id="Usuario" />
+                <input type="text" placeholder="Usuario" maxlength="10" name="Usuario" id="Usuario" required/>
 
                 <br><label for="Contra">Contraseña</label><br>
-                <input type="text" placeholder="Contraseña" maxlength="15" name="Contra" id="Contra">
+                <input type="text" placeholder="Contraseña" maxlength="15" name="Contra" id="Contra" required>
                 
-                <br/><label for="Fecha" name="Fecha" id="Fecha">Elige la fecha de la función</label><br/>
-                <input type="date" / name="Fecha" id="Fecha"><br/>
+                <br/><label for="Fecha" name="Fecha" id="Fecha" >Elige la fecha de la función</label><br/>
+                <input type="date" / name="Fecha" id="Fecha" required><br/>
 
-                <br><label for="Hora">Horarios disponibles</label><br>
-                <select name="Hora">
+                <br><label for="Hora" >Horarios disponibles</label><br>
+                <select name="Hora" required>
                     <option>13:30pm</option>
                     <option>15:30pm</option>
                     <option>18:00pm</option>
@@ -165,8 +165,8 @@
                     <option>21:00pm</option>
                 </select><br>
 
-                <br><label for="Pelicula">Selecciona la película</label><br>
-              <select name="Pelicula">
+                <br><label for="Pelicula" required>Selecciona la película</label><br>
+              <select name="Pelicula" required>
                   <option>El gato con botas</option>
                   <option>Creed III</option>
                   <option>Demoniaca</option>
@@ -174,20 +174,23 @@
                   <option>Ant-man</option>
               </select><br>
 
-            <br/><label for="Cantidad">Cantidad de boletos</label><br/>
-            <input type="number" name="Cantidad" id="Cantidad" value="1"/>
+            <br/><label for="Cantidad" required>Cantidad de boletos</label><br/>
+            <input type="number" name="Cantidad" id="Cantidad" value="1" required/>
 
-              <br><label for="Pelicula">Método de pago</label><br>
-              <select name="Pelicula">
+              <br><label for="Pelicula">Método de pago</label ><br>
+              <select name="Pelicula" required>
                   <option>PayPal</option>
                   <option>Tarjeta de Crédito/Débito</option>
                   <option>Mercado Pago</option>
               </select><br>
 
-              <br/><label for="Vencimiento" name="Vencimiento" id="Vencimiento">Fecha de vencimiento</label><br/>
-              <input type="date" / name="Vencimiento" id="Vencimiento"><br/>
+              <label for="NumeroTar">Número de tarjeta</label><br>
+              <input type="text" placeholder="Número de tarjeta" name="NumeroTar" id="NumeroTar" required />
+
+              <br/><label for="Vencimiento">Fecha de vencimiento</label><br/>
+              <input type="date" name="Vencimiento" id="Vencimiento" required><br/>
             
-                <br><input type="submit" value="Confirmar compra"/>
+                <br><input type="submit" value="Confirmar compra" required/>
         </form>
        </div>
     </section><td/>
