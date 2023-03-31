@@ -1,0 +1,108 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    background-image: url(horizontal.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 70px;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+#generales{
+   width: 700px;
+   margin: auto;
+   position: relative;
+   margin: 100px auto 100px;
+   padding: 50px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.298);
+   color: white;
+   text-decoration: underline;
+   border-radius: 10px;
+   font-size: 50px;
+}
+
+#generales:hover{
+    font-family: 'DM Serif Display', serif;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    margin: 100px auto 100px;
+    padding: auto;
+    text-align: center;
+    background-image: url(opc1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: rgba(253, 253, 255, 0);
+    font-size: 50px;
+    border-radius: 15px;
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+#generales:active{
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    background: #d5a970;
+    color: rgba(255, 255, 255, 0);
+    font-size: 50px;
+    text-decoration: wavy;
+    border-radius: 10px;
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+a{
+    color: white;
+}
+a:hover{
+    color: rgba(240, 248, 255, 0);
+}
+
+a:active{
+    color: rgba(255, 255, 255, 0);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.298);
+    overflow: hidden;
+    color: white;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #d5a970;
+    color: rgb(255, 255, 255);
+    text-emphasis-style: bold;
+}
