@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Lexend:wght@600&display=swap" rel="stylesheet">
+    <title>BLACKPINK</title>
+
+    <style>
+        body 
+        {
+            background-image: url(BP.jpg);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .BLACKPINK-title
+        {
+            top: 0%;
+            left: 60%;
+            width: 500PX;
+            position: absolute; 
+			padding: 20px; 
+			background-color: rgba(255, 255, 255, 0.432); 
+			border-radius: 20px; 
+			font-family: 'Lexend', sans-serif; 
+			font-size: 36px; 
+; 
+			text-align: center; 
+		}
+
+        .blackpink-li {
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    background-color: #ff60ca;
+    color: white;
+    display: block;
+    list-style: none;
+    padding: 5px;
+    width: 40%;
+    position: relative;
+  }
+  
+  .blackpink-li:hover .blackpink{
+    background-color: rgb(102, 255, 204);
+    display: block;
+    opacity: 1;
+  }
+  
+  .blackpink {
+    color: black;
+    background-color: rgb(255, 202, 231);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    display: none;
+  }
+  
+  .blackpink li {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    list-style: none;
+  }
+
+  .blackpink li:hover{
+    color: rgb(255, 0, 200);
+    cursor: zoom-in;
+    list-style: none;
+  }
+
+  .blackpink li a {
+    text-decoration: none;
+    font-family: 'Bodoni Moda', serif;
+  }
+
+  .blackpink li:hover 
+{
+    /* Estilo item */
+    background: #c60cff;
+    color: #000000;
+}
+
+  .blackpink-li li ul li{
+    height: 0;
+    line-height: 1.5em;
+    background: #fdfdfd;
+    padding: 0;
+    margin: .25em .5em .25em .5em;
+    overflow: hidden;
+     
+     /* Override menu centrado */
+     float:none;
+     position:relative;
+     right:0;
+     
+     /* Animacion */
+     -moz-transition-duration:.3s;
+     -webkit-transition-duration:.3s;
+     -o-transition-duration:.3s;
+     transition-duration:.3s;
+  }
+
+  .blackpink-li li ul li:hover
+{
+    /* Estilo item */
+    border-left: 5px solid #00b0f0;
+}
+
+/* Mostrar items del submenu*/
+.blackpink-li li:hover ul li
+{
+    /* Mostrar item */
+     min-height: 2em;
+     display: block;
+     float: none;
+}
+
+a{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    
+    <h1 class="BLACKPINK-title">BLACKPINK</h1> 
+    <nav>
+        <li class="blackpink-li">
+          MÁS SOBRE BLACKPINK
+          <ul class="blackpink">
+            <li><a href="#">music</a></li>
+            <li><a href="#">members</a></li>
+            <li><a href="#">tour</a></li>
+          </ul>
+        </li>
+    </nav>
+    
+</body>
+</html>
