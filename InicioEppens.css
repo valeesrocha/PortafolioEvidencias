@@ -7,7 +7,6 @@ nav {
     width: 100%;
     overflow: visible;
 }
-
 nav ul {
     padding: 0;
     list-style: none;
@@ -40,12 +39,12 @@ nav a:hover {
     font-family: arial;
 }
 
-#escuela{
-    float: center;
-    width: 100%;
+img:hover{
+    border: 2px solid gray;
 }
 
 .banner{
+    background-color: #060040;
     border: none;
     text-align: center;
     align-items: center;
@@ -53,6 +52,7 @@ nav a:hover {
 }
 
 .banner td, th {
+    background-color: #060040;
     color: white;
     border: none;
     align-items: center;
@@ -137,16 +137,17 @@ nav a:hover {
   
 .facebook a{
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.facebook:hover{
-    color: white;
+.facebook:hover a{
+    color: blue;
     text-decoration: underline;
 }
 
 .redes{
+    background: #fbfbfb;
     margin: auto 0;
     vertical-align: middle;
     text-align: center;
