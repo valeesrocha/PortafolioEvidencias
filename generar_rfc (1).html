@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar RFC</title>
+
+    <script>
+        function subcadena()
+    {
+    var nom, paterno, materno, age, m_onth, d_ay;
+    nom = document.getElementById("nombre").value;
+    paterno = document.getElementById("ap").value;
+    materno = document.getElementById("am").value;
+    age = document.getElementById("año").value;
+    m_onth = document.getElementById("mes").value;
+    d_ay = document.getElementById("dia").value;
+
+    var subcad1= nom.substring(0, 1);
+    var subcad2= paterno.substring(0, 2);
+    var subcad3= materno.substring(0, 1);
+    var subcad4= age.substring(2, 4);
+    
+
+    var concatenar = subcad2.concat(subcad3, subcad1, subcad4, m_onth, d_ay);
+    var mayus= concatenar.toUpperCase();
+    document.getElementById("resultado").value=mayus;
+    }
+
+    </script>
+
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        div{
+            margin: 3%;
+            text-align: justify;
+        }
+
+        form{
+            background-color: rgb(0, 0, 75);
+            width: 60%;
+            padding: 3%;
+        }
+
+        input{
+            color: black;
+        }
+
+        label{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Genera tu RFC</h1>
+    
+    <div>El Registro Federal de Contribuyentes, mejor conocido como RFC, es una clave compuesta alfanumérica que el gobierno utiliza para identificar a las personas
+    físicas y morales que practican alguna actividad económica en nuestro país. Es un elemento fundamental para emprender individualmente y crear empresas en sociedad.</div>
+
+    <center><form method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label></br>
+        <input type="text" name="nombre" id="nombre"></br></br>
+        <label for="ap">Apellido paterno:</label></br>
+        <input type="text" name="ap" id="ap"></br></br>
+        <label for="am">Apellido materno:</label></br>
+        <input type="text" name="am" id="am"></br></br>
+        <label for="año">Año de nacimiento</label></br>
+        <input type="text" name="año" id="año"></br></br>
+        <label for="mes">Mes de nacimiento</label></br>
+        <input type="text" name="mes" id="mes"></br></br>
+        <label for="dia">Día de nacimiento</label></br>
+        <input type="text" name="dia" id="dia"></br></br>
+        <input type="button" name="boton7" id="boton7" onclick="subcadena()" value="Generar RFC"><br><br>
+        <b><label for="resultado">Tu RFC</label></br></b>
+        <input type="text" name="resultado" id="resultado" ></br></br>
+
+    </form></center>
+    
+</body>
+</html>
